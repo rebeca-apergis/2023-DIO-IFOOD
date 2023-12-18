@@ -1,2 +1,2 @@
 # 2023-DIO-IFOOD
-Um repositório novo para voltar a atividade
+Desafio da plataforma DIO! Pratica de comandos GIT.
