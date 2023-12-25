@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de cadastro</title>
+</head>
+<body>
+    <!--Este é o formulário da aula 1:-->
+    <form name="signup" onsubmit="alert('Formulario enviado.');" method="POST" action="#">
+        
+            
+        <p>
+            Nome: <input type="text" name="name" /><br>
+            Idade: <input type="number" name="age" /><br>
+            Senha: <input type="password" name="password" /><br>
+            <button type="submit">Enviar</button>
+        </p>
+    </form>
+    
+    <P><STRONG>============================================</STRONG></P>
+
+    <!--    Este é o formulario da aula 2:
+            Onde veremos vários tipos de input.-->
+    <form>
+
+        <label> Text: </label><input type="text"/><br>
+        <label> Number: </label><input type="number" min="0" step="5" max="100"/><br>
+        <label> Button: </label><button type="button"> Enviar </button><br>
+        <label> Buttoni: </label><input type="button" value="Inputsend"/><br>
+        <label> Range: </label><input type="range" min="0" max="100" value="50"/><br>
+        <label> Color: </label><input type="color"/><br>
+        <label> E-mail: </label><input type="email"/><button type="submit">Enviar</button><br>
+        <label> URL: </label><input type="url"/><br>
+        <label> Data: </label><input type="date"/><br>
+        <label> Semana: </label><input type="week"/><br>
+        <label> Mes: </label><input type="month"/><br>
+        <label> Checkbox: </label><input type="checkbox"/><br>
+        <label> Radio: </label><input type="radio"/><br>
+        <label> Hidden: </label><input type="hidden"/><br>
+        <label> File: </label><input type="file" multiple/><br>
+        <label> Search: </label><input type="search"/><br>
+    </form>
+    
+    <P><STRONG>============================================</STRONG></P>
+
+    <FORM onsubmit="" METHOD="get">
+        <h3>Quais Opicionais você deseja?</h3>
+        <p>Coberturas extras para sua pizza:</p>
+        <input type="checkbox" name="opcao[0]" value="queijo"/> + Queijo <br>
+        <input type="checkbox" name="opcao[1]" value="calabresa"/> + Calabresa <br>
+        <input type="checkbox" name="opcao[2]" value="cebola"/> + Cebola <br>
+        <input type="checkbox" name="opcao[3]" value="azeitona"/> + Azeitona <br>
+
+        <p>Bordas Recheadas?</p>
+        <input type="radio" name="borda" value="sim"/> Sim <br>
+        <input type="radio" name="borda" value="nao"/> Não <br>
+
+        <p>Bebidas:</p>
+        <input type="radio" name="bebida" value="suco"/> Suco <br>
+        <input type="radio" name="bebida" value="refrigerante"/> Refri <br>
+        <input type="radio" name="bebida" value="agua"/> Água <br>
+        <input type="radio" name="bebida" value="nenhum"/> Nenhum <br>
+
+        <button type="submit"> Enviar Pedido </button>
+
+        <P><STRONG>============================================</STRONG></P>
+
+        <form method="get">
+            <label>Nome:</label><input type="text" name="name"/><br>
+            <label>Idade:</label><input type="number" name="age"/><br>
+            <label>Senha:</label><input type="password" name="password"/><br>
+            <button type="reset"> Limpar </button>
+            <button type="submit"> Enviar </button>
+
+            <button type="button" onclick="alert('Clicavel')">Clicavel</button>
+            <button type="button" onmouseover="alert('Clicavel')">Clicavel</button>     
+        </form>
+
+        <P><STRONG>============================================</STRONG></P>
+
+        <form>
+            
+            <select name="role">
+                <option selected value=""> Selecione o cargo</option>
+                <option value=""> Administrativo</option>
+                <option value=""> Pedreiro</option>
+                <option value=""> Diretor</option>
+                <option value=""> Monitor</option>
+                <option value=""> Garçom</option>
+            </select><br>
+
+        </form>
+
+        <P><STRONG>============================================</STRONG></P>
+        <!--Textarea-->
+        <form>
+            <label>Envie uma mensagem: </label><textarea rows="10" cols="50" name="message"></textarea>
+        </form>
+        
+    </FORM>
+</body>
+</html>
