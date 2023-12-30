@@ -4,31 +4,3 @@ h1{
 }
 h2{
     color: purple;
-}
-
-div{
-    background: lightgreen;
-    color: darkgreen;
-}
-
-#testecss1{
-    background:red;
-    color:aqua;
-}
-
-#testecss2{
-    background:aqua;
-    color:red;
-}
-
-.seletores{
-    text-transform:uppercase;
-}
-
-*{
-    font-weight:bold;
-}
-
-[title="banana"]{
-    color: yellow;
-}
