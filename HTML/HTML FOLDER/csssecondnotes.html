@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--NOTAS DE CSS: ESTILIZAÇÕES BASICAS COM CSS.
+    
+        #OBJECT-FIT:
+        object-fit: ; - redimensiona objeto e video para caber ou ficar maior.
+    
+        <code>object-fit: fill;</code> = distorce a imagem.
+        <code>object-fit: contain;</code> = preenche a imagem no tamanho original.    
+        <code>object-fit: cover;</code> = cobre a area e ultrapassa as bordas, cortando.
+        <code>object-fit: none;</code> = imagem fica no tamanho original.
+        <code>object-fit: scale-down;</code> = imagem é reduzida para caber.
+
+        #OBJECT-POSITION:
+        É usada junto com object-fit.
+        object-position: 50%(x horizontal) 50%(y vertical); - relativo ao container, ou posição na pagina.
+        object-position: left 50px;
+        left center right top bottom start end 0px 50%;
+
+        #FUNDO DOS ELEMENTOS:
+        background-color: palevioletred;
+        background-image: url('link ou caminho da pasta');
+        background-image: linear-gradient(lightpink, palevioletred, purple); = degrade
+        background-image: radial-gradient(green,pink); = degrade redondo
+        background-image: repeating-linear-gradient(to top, palevioletred 0 20px, lightpink 20px 40px); =listrar e muito mais possibilidades.
+
+        CSS3 PATTERNS GALLERY.
+
+        Camadas de fundo: 
+
+        background-image: url('link ou caminho da pasta'), url(segunda imagem, solida, a primeira é PNG);
+
+        #REDIMENSIONANDO IMAGENS DE FUNDO DE ELEMENTO:
+        background-image: url('link ou caminho da pasta');
+        background-size: auto, cover, contain, 100%, 100px 200px;
+        background-size: contain, cover;
+
+        IDENTIFICAR NO CSS POR ID NORMALMENTE.
+
+        #REPETIÇÃO DE IMAGENS DE FUNDO:
+        background-repeat: repeat, repeat-x, repeat-y, space, round, ro-repeat, no-repeat round;
+
+        #POSICIONAMENTO DAS IMAGENS DE FUNDO:
+        background-position: bottom, top, left, right, center, 50px, 50%, 50% 50%, center top, center 100%, bottom 10px right 20px;
+
+        #BACKGROUND ATTACHMENT:
+        Como o fundo do elemento se mexe relacionado a janela do navegador.
+        background attachment: fixed, scroll, local;
+        overflow: auto; (para texto muito grande, cria barra.)
+
+        #PROPRIEDADE BACKGROUND ORIGIN:
+        PONTO DE ORIGEM DA IMAGEM DE FUNDO:
+        background-origin: padding-box, border-box, content-box;
+
+        #PROPRIEDADE BACKGROUND CLIP:
+        background-clip: padding-box, border-box, content-box, text;
+        -webkit-background-clip: text;
+        color: transparent; (para o texto)
+
+        #MESCLAGEM:
+        background-blend-mode: multiply, screen, overlay, darken, lighten, color-dodge, color-burn, hard-light, soft-light, difference, exclusion, hue, saturation, color, luminosity;
+
+        #PROPRIEDADE BACKGROUND:
+        background:
+            url('')
+            top center / 200px 200px
+            no-repeat
+            fixed
+            padding-box
+            content-box
+            red;
+
+
+            a ordem das declarações conta, quem vem por ultimo é o mais forte.
+
+        ============================
+        
+        TAMANHO DA BORDA:
+        border-width: pixels, porcentagem, thin 1, medium 3, thick 5, 10 px 20 px 30 px 40 px;  
+        border-style: solid, 
+        border-color:
+
+        shorthands são atalhos, escrevendo em uma linha só.
+        
+        ESTILO DA BORDA:
+        border-style: solid, none, dashed, dottedm double,  groove,  ridge, inset, outset, dotted dashed solid double;
+
+        COR DA BORDA:
+        border-color: purple, RGB;
+
+        PROPRIEDADE BORDER:
+        border: 10px solid rgb;
+        border-bottom/left/right/top: 5px dashed red;
+        border-bottom-style: double;
+        border-bottom-width: 20px;
+        
+        ARREDONDANDO OS CANTOS COM BORDER RADIUS:
+        ***border-radius: 10px;
+        border-radius: 10px 20px 30px 50px;
+        border-radius: 10/50px;
+        border-radius: 50% = circle, if the pixels are equal on height and width.
+
+        BORDER IMAGE SOURCE:
+        shorthand.
+        border-image-source: url (''); (necessita de solid.)
+        border-image-source: linear-gradient(red,blue);
+        
+        BORDER IMAGE SLICE:
+        1  5  2
+        8  9  6     
+        4  7  3
+        quadrado, diamante, centro.
+
+        border-image-slice: 130;
+        border-image-repeat;
+        border-image-slice: 130 fill;
+
+        border-image-source: linear-gradient();
+        border-image-slice: 10px;
+
+        BORDER IMAGE WIDTH:
+        border-image-width: 10px 20px 30px 40px;
+        auto também aceita.
+
+        BORDER IMAGE REPEAT:
+        border-image-repeat: repeat/stretch/round/space/round space;
+
+        BORDER IMAGE OUTSET P1:
+        border-image-outset: 30px 20px 10px 5px; (afasta os elementos das bordas)
+
+        BORDER IMAGE OUTSET P2:
+        border-image: url('caminho') 169(slice) / 10px(width) 30px 40px 50px /10px(outset) 20px 30px 40px round(repeat);
+        uma linha.
+        ============================
+
+        #ONDE ENCONTRAR FONTE PERSONALIZADA:
+        
+
+        #PERSONALIZANDO FONTES:
+
+        #APLICANDO FONTES COM @FONT-FACE:
+
+        #APLICANDO FONTES PERSONALIZADAS COM @IMPORT-URL():
+
+        #ALTERANDO TAMANHO DAS FONTES COM FONT-SIZE:
+
+        #ESTILO DE FONTES (FONT-STYLE):
+
+        #ESPESSURA DAS FONTES COM FONT-WEIGHT:
+
+        #VARIAÇÃO DAS FONTES COM FONTE-VARIANT:
+
+        #PROPRIEDADE FONT-STRETCH:
+
+        #CUSTOMIZANDO A ALTURA DA LINHA COM LINE-HEIGHT:
+
+        #PROPRIEDADE RESUMIDA FONT:
+
+        ==========================
+
+        TEXTOS: 
+
+
+
+
+    -->
+
+
+
+</body>
+</html>
