@@ -140,35 +140,150 @@
         ============================
 
         #ONDE ENCONTRAR FONTE PERSONALIZADA:
-        
+        tipos genericos:
+        - serif
+        - sans-serif
+        - fantasy
+        - cursive
+        - monospace
+
+        fonts.google.com
 
         #PERSONALIZANDO FONTES:
+        * {
+            font-family: cursive/arial/etc/"times new roman", "arial", sans-serif;
+        }
 
         #APLICANDO FONTES COM @FONT-FACE:
+        @font-face{
+            font-family: roboto;
+            src: local(), url("arquivo ou ponto ttf");
+            font-weight: normal;
+            font-style:;
+        }
 
+        * {
+            font-family:roboto;
+
+        }
         #APLICANDO FONTES PERSONALIZADAS COM @IMPORT-URL():
+        importar folhas de estilo externas dentro do arquivo CSS
+        É possivel importar a fonte por um link, no site por embed.
+
+        @import url("embed do site");
+
+        Também é possivel usar URL E LINK mas o manejo é pior dentre muitas paginas.
+        É bom ter um arquivo CSS global para seu site, da para chama-lo por link de referencia.
 
         #ALTERANDO TAMANHO DAS FONTES COM FONT-SIZE:
+        font-size: 20px/xx-small/x-small/small/medium/large/x-large/xx-large/larger/smaller;
+        Larger e smaller busca elementos pais. O seu tamanho é relativo.
 
         #ESTILO DE FONTES (FONT-STYLE):
+        font-style: normal/italic/oblique(mais depreciado);
 
         #ESPESSURA DAS FONTES COM FONT-WEIGHT:
+        font-weight: lighter/normal/bold;
+
+        developer-mozilla.org
 
         #VARIAÇÃO DAS FONTES COM FONTE-VARIANT:
+        define se o texto deve ser exibido em small caps:
+        font-variant: small-caps;
 
         #PROPRIEDADE FONT-STRETCH:
+        <code>font-stretch: normal/semi-expanded/expande/extra-expanded/ultra-expanded</code>
 
         #CUSTOMIZANDO A ALTURA DA LINHA COM LINE-HEIGHT:
+        line-height: normal/1.2/2/16px/10%/1.5(padrão);
 
         #PROPRIEDADE RESUMIDA FONT:
-
+        font: 20px arial, sans-serif; / italic small-caps bold 24px/2 georgia, serif; (tudo em uma linha é possivel)
         ==========================
 
-        TEXTOS: 
+        TEXTOS:
+        
+        #TEXT-TRANSFORM: é responsavel por definir qual caractere esta em maisculo e minusculo.
+        text-transform: none/capitalize/uppercase/lowercase/initial/inherit(herda do elemento pai);
 
+        #TEXT-ALIGN: alinha os textos em um elemento no sentido horizontal.
+        text-align: left/right/center/justify;
 
+        #TEXT-DECORATION: adiciona ou remove linhas do texto sejam em cima no meio ou embaixo.
+        text-decoration-line
+        text-decoration-style
+        text-decoration-color
+        text-decoration-thickness
 
+        text-decoration(line): none/underline/line-through/overline;
+        text-decoration-style: solid/double/dotted/dashed/wavy;
+        text-decoration-color: blue;
+        text-decoration-thickness: 50px;
 
+        text-decoration: underline solid red 1px;
+
+        #TEXT-IDENT: definir recuo como um paragrafo.   
+        text-indent: 20px/-20px;;
+
+        #LETTER-SPACING E WORD-SPACING:
+        letter-spacing: normal/5px/-5px;
+        word-spacing: normal/5px/-5px;
+        
+        #WHITE-SPACE: define o que acontece com os espaços em branco do texto.
+        white-space: normal/nowrap/pre/pre-line/pre-wrap/break-spaces;
+
+        #WORD-WRAP: quebra em qualquer palavra ou de outra forma: 
+        word-wrap: normal/break-word;
+
+        #WORD-BREAK: Essa regra tende a preservar as quebras e respeitar textos estrangeiros asiaticos.
+        word-break: normal/break-all/keep-all;
+        
+        #WRITING-MODE:
+        writing-mode: horizontal-tb/vertical-rl/vertical-lr/;
+
+        #TEXT-OVERFLOW: define a orientação do texto, horizontal ou vertical.
+        overflow: hidden;
+        text-overflow: clip/ellipsis/'firefox só';
+
+        =======================
+
+        SOMBRAS:
+        
+        #EFEITO DE SOMBRA NOS ELEMENTOS:
+        box-shadow: inset(dentro do elemento) 10px 30px 5px(desfoque) 7px(propagação) red, 10px 10px -7px black (mais sombra);
+        filter: drop-shadow(10px 10px 7px gray); (cria sombras em volta de elementos, inclusive png)
+
+        #EFEITO DE SOMBRA NOS TEXTOS:
+        text-shadow: 10px 10px 5px red;
+
+        =======================
+
+        OUTROS:
+
+        #TRANSPARENCIA DOS ELEMENTOS:
+        opacity: 0.5/50%;
+
+        #PROPRIEDADE OVERFLOW:
+        overflow: visible/hidden/scroll/auto/;
+        overflow-y: visible/hidden/scroll/auto/;
+        overflow-x: visible/hidden/scroll/auto/;
+
+        #REDEFININDO PROPRIEDADES PADRÕES DOS NAVEGADORES: reset css é uma folha de estilos que irá sobrepor todas as propriedades de estilo de css que os navegadores colocam por padrão.
+        Isso define um padrão visual para seu site em todos os navegadores.
+
+        É um arquivo que precisa ser baixado.
+
+        reset.css: erick mayor
+
+        *{
+            padding: 0;
+            margin 0;
+            vertical-align: baseline;
+            list-style: none;
+            border 0;
+        }
+
+        É possivel fazer que o arquivo seja reutilizado em várias paginas, INCLUSIVE NO SEU GLOBAL CSS: @import url('caminho do reset css');
     -->
 
 
