@@ -183,7 +183,7 @@ VALOR DE UM PRODUTO E O QUE DEVE SER PAGO.
 
 calcular o valor total do produto.
 
-*/
+
 
 const precoBase = 100;
 let pixDin15 = precoBase - (precoBase * 0.15);
@@ -191,6 +191,7 @@ let deb10 = precoBase - (precoBase * 0.10);
 let credParce2 = precoBase;
 let credParceMais = precoBase + (precoBase * 0.10);
 let pagamento = 'Crédito 2+';
+
 
 console.log('O metodo de pagamento selecionado foi:')
 console.log(pagamento);
@@ -204,6 +205,36 @@ if (pagamento === 'Débito') {
     console.log(credParce2.toFixed(2));
 } else if (pagamento === 'Crédito 2+') {
     console.log(credParceMais.toFixed(2));
+} else {
+    console.log('Selecione uma forma de pagamento valida.');
 }
+
+==========================================
+
+FUNÇÕES NO JAVASCRIPT: SÃO UM PEQUENO TRECHO DE CÓDIGO PARA SER UTILIZADO A QUALQUER MOMENTO, CHAMANDO-O.
+
+Exemplos: */
+
+/*function sayMyName(name){ declaração do nome da função e de uma variavel para ela.
+    console.log('Your name is ' + name); concatenação de string mais variavel.
+}
+
+sayMyName('Rebeca'); Passando parametro para a variavel para girar a função.
+sayMyName('Felipe');*/
+/*
+function quadrado(valor){
+    return valor * valor;
+}
+
+const quadradoDeDez = quadrado(10);
+console.log(quadradoDeDez);
+*/
+
+function incrementarJuros(valor, percentualJuros){
+    const valorDeAcrescimo = (percentualJuros / 100) * valor;
+    return valor + valorDeAcrescimo;
+}
+
+console.log( 'O valor final será de: R$' + incrementarJuros(100,10).toFixed(2));
 
 
