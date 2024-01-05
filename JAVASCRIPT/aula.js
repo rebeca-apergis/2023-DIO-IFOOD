@@ -1,4 +1,4 @@
-console.log('Olá Mundo.'); /* Introdutória. Nota: é necessário salvar arquivo para ele atualizar no terminal.
+/*console.log('Olá Mundo.');  Introdutória. Nota: é necessário salvar arquivo para ele atualizar no terminal.
 
 Declaração de variaveis: 
 
@@ -228,7 +228,7 @@ function quadrado(valor){
 
 const quadradoDeDez = quadrado(10);
 console.log(quadradoDeDez);
-*/
+
 
 function incrementarJuros(valor, percentualJuros){
     const valorDeAcrescimo = (percentualJuros / 100) * valor;
@@ -237,4 +237,80 @@ function incrementarJuros(valor, percentualJuros){
 
 console.log( 'O valor final será de: R$' + incrementarJuros(100,10).toFixed(2));
 
+==========================================
+
+COMO ORGANIZAR FUNÇÕES: 
+
+Sempre por o código dentro de uma função para organizar, chamada MAIN
+
+É possivel concatenar funções distintas.
+
+function main(){
+    console.log('Esta é a função principal.');
+}
+
+main();
+
+
+function calcularImc(peso,altura){
+    return peso / Math.pow(altura, 2);
+}
+
+
+function classificarImc(imc){
+    if (imc <= 18.5) {
+        return 'Voce está abaixo do seu peso ideal.';
+    } else if (imc >= 18.6 && imc <= 25) {
+        return 'Voce está no seu peso ideal.';
+    } else if (imc > 25 && imc <= 30) {
+        return 'Voce está acima do seu peso ideal.';
+    } else if (imc > 30 && imc <= 40){
+        return 'Voce está obeso';
+    } else if (imc > 40){
+        return 'Voce está em obesidade morbida.';
+    }
+}
+
+function main(){
+    const peso = 110;
+    const altura = 1.75;
+    const imc = calcularImc(peso,altura);
+
+    console.log(classificarImc(imc));  
+}
+
+main();
+
+==========================================
+
+Funções invocadas imediatamente: não é necessário invocalas.
+
+console.log(main);
+
+const main2 = main;
+
+main = function(){
+    console.log(1);
+}
+
+(function (){
+    console.log('Voce é fofinho.');
+})()
+o nome da função não é declarado quando ela vai ser rodada uma vez só. organizar o código.
+
+function escrevaMeuNome(nome){
+    return 'Meu nome é: ' + nome;
+}
+
+function eDeMaior(idade){
+    if (idade >= 18){
+        console.log(escrevaMeuNome('Rebeca') + ' E sou de maior.');
+    } else {
+        console.log(' E sou de menor.');
+    }
+}
+
+eDeMaior(24);
+
+*/
 
