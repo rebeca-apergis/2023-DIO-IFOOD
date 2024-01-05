@@ -153,7 +153,7 @@ CALCULADORA DE IMC:
 - Entre 18.5 e 25 = peso normal;
 - Entre 25 e 30 = acima do peso;
 - Entre 30 e 40 = obeso;
-- Acima de 40 = Obesidade grave; */
+- Acima de 40 = Obesidade grave; 
 
 let altura = 1.70;
 let pesoKg = 120;
@@ -172,3 +172,5 @@ if (imc <= 18.5) {
 }
 
 console.log(imc.toFixed(2));
+
+*/
