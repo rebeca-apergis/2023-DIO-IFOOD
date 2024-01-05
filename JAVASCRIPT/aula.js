@@ -173,4 +173,37 @@ if (imc <= 18.5) {
 
 console.log(imc.toFixed(2));
 
+==========================================
+
+VALOR DE UM PRODUTO E O QUE DEVE SER PAGO.
+- a vista débito recebe 10% de desconto;
+- a vista dinheiro ou pix recebe 15% de desconto;
+- em duas vezes, preço normal da etiqueta sem juros;
+- acima de duas vezes, preço normal da etiqueta + 10% de juros;
+
+calcular o valor total do produto.
+
 */
+
+const precoBase = 100;
+let pixDin15 = precoBase - (precoBase * 0.15);
+let deb10 = precoBase - (precoBase * 0.10);
+let credParce2 = precoBase;
+let credParceMais = precoBase + (precoBase * 0.10);
+let pagamento = 'Crédito 2+';
+
+console.log('O metodo de pagamento selecionado foi:')
+console.log(pagamento);
+console.log('O valor final a ser pago será de:')
+
+if (pagamento === 'Débito') {
+    console.log(deb10.toFixed(2));
+} else if (pagamento === 'Pix' || pagamento === 'Dinheiro' ) {
+    console.log(pixDin15.toFixed(2));
+} else if (pagamento === 'Crédito 2x') {
+    console.log(credParce2.toFixed(2));
+} else if (pagamento === 'Crédito 2+') {
+    console.log(credParceMais.toFixed(2));
+}
+
+
