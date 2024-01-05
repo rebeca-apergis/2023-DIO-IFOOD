@@ -126,21 +126,49 @@ Exercicio: média de notas!
 Média: 1 + 2 + 3 / 3;
  < 5 = reprovado
  => 5 & <= 7] = recuperação
- > 7 = aprovado */
+ > 7 = aprovado 
 
  console.log('MÉDIA DE NOTAS ESTUDANTIL DO SEMESTRE:');
 
  let nota1 = 7;
  let nota2 = 9;
- let nota3 = 1;
+ let nota3 = 9;
  let mediaFinal = (nota1 + nota2 + nota3) / 3;
 
  console.log(mediaFinal.toFixed(2));
 
- if (mediaFinal <= 5.9) {
+ if (mediaFinal < 5) {
     console.log('Voce está reprovado pela sua média.')
- } else if (mediaFinal >= 6 && mediaFinal <= 7){
+ } else if (mediaFinal >= 5 && mediaFinal <= 7){
     console.log('Voce está de recuperação pela sua média.');
  } else if (mediaFinal > 7) {
     console.log('Voce está aprovado para o próximo semestre!');
  }
+
+==========================================
+
+CALCULADORA DE IMC:
+
+- Abaixo de 18.5 = abaixo do peso;
+- Entre 18.5 e 25 = peso normal;
+- Entre 25 e 30 = acima do peso;
+- Entre 30 e 40 = obeso;
+- Acima de 40 = Obesidade grave; */
+
+let altura = 1.70;
+let pesoKg = 120;
+let imc = pesoKg / (altura * altura);
+
+if (imc <= 18.5) {
+    console.log('Voce está abaixo do seu peso ideal.');
+} else if (imc >= 18.6 && imc <= 25) {
+    console.log('Voce está no seu peso ideal.');
+} else if (imc > 25 && imc <= 30) {
+    console.log('Voce está acima do seu peso ideal.');
+} else if (imc > 30 && imc <= 40){
+    console.log('Voce está obeso');
+} else if (imc > 40){
+    console.log('Voce está em obesidade morbida.');
+}
+
+console.log(imc.toFixed(2));
