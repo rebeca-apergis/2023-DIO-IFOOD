@@ -97,20 +97,50 @@ Revisão e dicas de boas praticas:
 
 ==========================================
 
-Exercicio: incremento do calculo do valor da viagem:*/
+Exercicio: incremento do calculo do valor da viagem:
 
 const gasosaLitro = 5.63;
 const dieselLitro = 5.94;
-const dieselPorKm = 15;
+const dieselPorKm = 10;
 const gasosaPorKm = 10; 
 let distanciaKm = 100;
+const tipoCombustivel = 'Diesel';
 
 let litrosGastosGas = distanciaKm / gasosaPorKm;
 let precoTotalGas = litrosGastosGas * gasosaLitro;
 let litrosGastosDis = distanciaKm / dieselPorKm;
 let precoTotalDis = litrosGastosDis * dieselLitro; 
 
+if (tipoCombustivel === 'Diesel') {
+    console.log(precoTotalDis.toFixed(2));
+    console.log('O combustivel é Diesel.');
+} else {
+    console.log(precoTotalGas.toFixed(2));
+    console.log('O combustivel é Gasonlina.');
+}
 
-console.log(precoTotalGas.toFixed(2));
+==========================================
 
-console.log(precoTotalDis.toFixed(2));
+Exercicio: média de notas! 
+
+Média: 1 + 2 + 3 / 3;
+ < 5 = reprovado
+ => 5 & <= 7] = recuperação
+ > 7 = aprovado */
+
+ console.log('MÉDIA DE NOTAS ESTUDANTIL DO SEMESTRE:');
+
+ let nota1 = 7;
+ let nota2 = 9;
+ let nota3 = 1;
+ let mediaFinal = (nota1 + nota2 + nota3) / 3;
+
+ console.log(mediaFinal.toFixed(2));
+
+ if (mediaFinal <= 5.9) {
+    console.log('Voce está reprovado pela sua média.')
+ } else if (mediaFinal >= 6 && mediaFinal <= 7){
+    console.log('Voce está de recuperação pela sua média.');
+ } else if (mediaFinal > 7) {
+    console.log('Voce está aprovado para o próximo semestre!');
+ }
