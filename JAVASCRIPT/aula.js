@@ -314,3 +314,202 @@ eDeMaior(24);
 
 */
 
+/*const precoBase = 100;
+let pixDin15 = precoBase - (precoBase * 0.15);
+let deb10 = precoBase - (precoBase * 0.10);
+let credParce2 = precoBase;
+let credParceMais = precoBase + (precoBase * 0.10);
+let pagamento = 'Crédito 2+';
+
+
+console.log('O metodo de pagamento selecionado foi:')
+console.log(pagamento);
+console.log('O valor final a ser pago será de:')
+
+if (pagamento === 'Débito') {
+    console.log(deb10.toFixed(2));
+} else if (pagamento === 'Pix' || pagamento === 'Dinheiro' ) {
+    console.log(pixDin15.toFixed(2));
+} else if (pagamento === 'Crédito 2x') {
+    console.log(credParce2.toFixed(2));
+} else if (pagamento === 'Crédito 2+') {
+    console.log(credParceMais.toFixed(2));
+} else {
+    console.log('Selecione uma forma de pagamento valida.');
+}
+
+
+function precoFinal(formaPagamento,precoBase){
+    if (formaPagamento === 1 ) { precoBase = precoBase - (precoBase * 0.10); }
+    if (formaPagamento === 2 || formaPagamento === 3) { precoBase = precoBase - (precoBase * 0.15); }
+    if (formaPagamento === 4 ) { precoBase = precoBase; }
+    if (formaPagamento === 5 ) { precoBase = precoBase + (precoBase * 0.10); }
+    return precoBase;
+    
+}
+
+function pagamento(forma){
+    if (forma === 1) { metodo = 'Débito'}
+    if ((forma === 2) || (forma === 3)) { metodo = 'Dinheiro ou Pix.'}
+    if (forma === 4) { metodo = 'Crédito em 2x.'}
+    if (forma === 5) { metodo = 'Crédito em várias vezes.'}
+    return metodo;
+}
+let metodoDePagamento = 1;
+
+console.log('O preço final ficou em: R$' + precoFinal(metodoDePagamento,100).toFixed(2) + ', E o seu pagamento foi feito em ' + pagamento(metodoDePagamento));
+
+==========================================
+
+/* Objetos no javascript, literais. 
+
+const vitor = {
+    nome: 'Vitor J Guerra',
+    idade:  25,
+    altura: 1.70,
+
+    descrever: function () {
+        console.log(`Meu nome é ${this.nome} e a minha idade é ${this.idade} anos.` ); /*para referenciar valores é necessário usar acentos graves e não aspas...    
+    }
+};
+
+const atributo ='idade'; - referenciando o atributo diretamente com seu nome.
+console.log(vitor[atributo]);
+vitor['idade'] = 35; - reatribuindo valores indiretamente para um atributo.
+console.log(vitor[atributo]);
+
+vitor.nome = 'Renan';
+vitor.idade = 30;
+
+vitor.descrever();
+
+console.log(vitor.nome + ', tem ' + vitor.idade + ' anos de idade.');
+
+É possivel incrementar objetos fora de seus escopois iniciais.
+
+vitor.altura = 1.70;
+
+vitor.sobrenome = 'Guerreiro';
+
+delete vitor.sobrenome;
+
+console.log(vitor); */
+
+/* Funções dentro de objetos são chamadas de metodos.
+
+==========================================
+
+/* Como criar classes e instancias: elas são feitas para agrupar objetos similares para que possa ser evitada a repetição constante.
+classe é uma definição de como um objeto deve ser, e instancia é uma ocorrencia daquele objeto.
+
+
+class Pessoa {
+    nome;
+    idade;
+    aniversario;
+
+    constructor(nome,idade){
+        this.nome = nome;
+        this.idade = idade;
+        this.aniversario = 2023 - idade;
+    }
+    descrever(){
+        console.log(`Meu nome é ${this.nome} e eu tenho ${this.idade} anos de idade.`);
+    }}
+
+
+
+console.log(rebeca);
+console.log(felipe);
+
+rebeca.descrever();
+felipe.descrever();
+
+function compararPessoas (p1,p2){
+    if (p1.idade < p2.idade) {
+        console.log(`${p1.nome} é mais novo(a) do que ${p2.nome}.`);
+    } else if (p1.idade > p2.idade) {
+        console.log(`${p1.nome} é mais velho(a) do que ${p2.nome}.`);
+    } else {
+        console.log(`${p1.nome} e ${p2.nome} tem a mesma idade.`);
+    }}
+
+const rebeca = new Pessoa('Rebeca Apergis',24);
+const felipe = new Pessoa('Felipe Pimentel de Almeida',24);
+
+compararPessoas(rebeca,felipe);
+
+==========================================
+
+/*EXERCICIOS GUIADOS DE OBJETO E CLASSE. */
+
+/*CARROS.
+
+class Carros {
+    marca;
+    cor;
+    litrosPorKm;
+
+    constructor (marca,cor,litrosPorKm){
+        this.marca = marca;
+        this.cor = cor;
+        this.litrosPorKm = litrosPorKm;
+    }
+    calcularGasto(distancia, precoCombustivel){
+        return distancia * this.litrosPorKm * precoCombustivel;
+    }}
+
+const uno = new Carros('Uno','Roxo',1/12);
+const palio = new Carros('Palio','Vermelho',1/10);
+
+console.log(palio);
+
+console.log(palio.calcularGasto(70,5));*/
+
+/*EXERCICIOS GUIADOS DE OBJETO E CLASSE.*/
+
+/*PESSOAS E IMC:
+
+class Pessoas {
+    nome;
+    peso;
+    altura
+
+    constructor (nome,peso,altura){
+        this.nome = nome;
+        this.peso = peso;
+        this.altura = altura;
+    }
+
+    calcularImc(){
+        return this.peso / (this.altura * this.altura);
+    }
+
+    classificarImc(){
+
+        const imc = this.calcularImc();
+        if (imc <= 18.5) {
+            return 'Voce está abaixo do seu peso ideal.';
+        } else if (imc >= 18.6 && imc <= 25) {
+            return 'Voce está no seu peso ideal.';
+        } else if (imc > 25 && imc <= 30) {
+            return 'Voce está acima do seu peso ideal.';
+        } else if (imc > 30 && imc <= 40){
+            return 'Voce está obeso';
+        } else if (imc > 40){
+            return 'Voce está em obesidade morbida.';
+        }
+    }
+}
+
+const jose = new Pessoas('José',85,1.90);
+console.log(jose.classificarImc());
+console.log(jose);
+
+==========================================
+
+*/
+
+
+
+
