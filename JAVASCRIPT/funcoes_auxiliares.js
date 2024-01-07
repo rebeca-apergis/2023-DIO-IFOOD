@@ -12,7 +12,7 @@ function print(texto){console.log(texto);}
 
 module.exports = {gets, print};
 
-====================================*/
+====================================
 
 const entradas = [5,50,111,98,23,20,56,99,87,11,54,69];
 let i = 0;
@@ -24,5 +24,10 @@ function gets(){
     i++;
     return valor;
 }
+*/
+
+function gets(){}
+function print(texto){console.log(texto);}
 
 module.exports = {gets,print};
+

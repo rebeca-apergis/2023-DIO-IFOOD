@@ -32,8 +32,7 @@ for (let i = 0; i < numerosSorteados.length; i++) {
     if (numeroSorteado > maiorValor){maiorValor = numeroSorteado;}
 }
 
-print(maiorValor);*/
-
+print(maiorValor);
 const quantidadeDeAlunos = gets();
 let maiorValorEncontrado = 0;
 
@@ -43,4 +42,6 @@ for (let i = 0; i < quantidadeDeAlunos; i++) {
     
 }
 
-print(maiorValorEncontrado);
+print(maiorValorEncontrado);*/
+
+
