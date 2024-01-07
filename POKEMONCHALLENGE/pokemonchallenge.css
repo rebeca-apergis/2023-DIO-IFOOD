@@ -1,0 +1,7 @@
+*{
+    font-family:'Roboto',sans-serif;
+}
+
+.content {
+    padding: 1rem; /*Rem é relativo ao tamanho do browser da pessoa, sendo assim maleavel. Pixel é fixo.*/
+}
